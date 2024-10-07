@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+/* ------------------------ General styling ------------------- */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+body {
+  display: flex;
+  background-color: #fff;
+  margin-top: 50px;
+  /* background: url("global-virtual-currency-sign-techno-concept-background-design_1017-52482.jpg") no-repeat center; */
+}
+
+
+/* ------ navbar styling ---------- */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1E2E96;
+  padding: 5px 10px;
+  height: 50px;
+  width: 100%;  /* Full width of the screen */
+  position:fixed;
+  top: 0; /* Stick it to the top */
+  left: 0;
+  z-index: 1000;  /* Ensure the navbar is above other content */
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+/* Logo styling */
+.logo {
+  width: 50px;
+  height: auto;
+  padding-left: 5px;
+  margin-right: 10px;
+}
+
+/* Company name styling */
+.company-name {
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+/* Language dropdown styling */
+.language-dropdown {
+  background-color: white;
+  color: black;
+  padding: 2px;
+  font-size: 12px;
+  border-radius: 5px;
+}
+
+.Lan-navbar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 20px;
+}
+
+.Lan-navbar a {
+  padding-left: 15px;
+  font-size: 13px;
+}
+
+
+/* ----------------- Main ---------------------- */
+
+#root{
+  /* width: 90%; */
+  background-image: url(public/global-virtual-currency-sign-techno-concept-background-design_1017-52482.jpg);
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: 100% 50%;
+  height: 100vh;
+}
+
+.currency-converter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  padding: 40px 50px 10px;
+}
+
+.currency-converter .title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px  50px 50px;
+  font-size: 30px;
+}
+
+.subtile {
+  padding-top: 5px;
+  font-style: italic;
+}
+
+.currency-converter .converter-form {
+  background-color: #fff;
+  border: 1px solid whitesmoke;
+  border-radius: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
+  padding: 5%;
+
+
+}
+
+.converter-form .form-group {
+  display: flex;
+  margin-bottom: 30px;
+  flex-direction: column;
+}
+
+.converter-form .form-group .form-label {
+  font-weight: 600;
+  display: block;
+  margin-bottom: 9px;
+  font-size: 1.4rem;
+
+
+}
+
+.converter-form .form-group .form-input {
+  outline: none;
+  font-size: 1.1rem;
+  padding: 0 15px;
+  color: #000;
+  font-weight: 500;
+  min-height: 48px;
+  width: 70%;
+  border-radius: 6px;
+  background: hwb(0 100% 50% / 0.1);
+  border: 1px solid hwb(0 100% 0% / 0.5);
+}
+
+
+.converter-form .form-currency-group {
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.form-currency-group .currency-select {
+  display: flex;
+  padding: 0 10px;
+  min-height: 45px;
+  align-items: center;
+  border-radius: 6px;
+  background: hwb(0 100% 50% / 0.1);
+  border: 1px solid hwb(0 100% 0% / 0.5);
+}
+
+.form-currency-group .currency-select img {
+  width: 25px;
+}
+
+.form-currency-group .currency-select .currency-dropdown {
+  outline: none;
+  border: none;
+  background: none;
+  color: #000;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0 10px 0 5px;
+}
+
+.form-currency-group .currency-select .currency-dropdown option {
+  color: #000;
+  font-weight: 500;
+}
+
+.form-currency-group .swap-icon {
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+  border-radius: 50%;
+  display: flex;
+  margin-top: 25px;
+  align-items: center;
+  justify-content: center;
+  background: hwb(0 100% 50% / 0.1);
+  border: 1px solid hwb(0 100% 0% / 0.5);
+  transition: 0.2s ease;
+}
+
+.form-currency-group .swap-icon:hover {
+  background: hwb(0 100% 50% / 0.1);
+}
+.converter-form .submit  {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 35px;
+}
+.converter-form .submit-button {
+  background-color: rgba(30, 46, 150);
+  color: #fff;
+  width: 50%;
+  min-height: 52px;
+  border-radius: 50px;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.converter-form .submit-button:hover {
+  background: rgba(30, 46, 150, 0.8);
+}
+
+.converter-form .exchange-rate {
+  padding: 0 50px  10px 50px;
+
+}
+
+.converter-form .exchange-rate-result {
+  color: #000;
+  font-size: 1.1rem;
+  font-weight: 500;
+  text-align: center;
+  padding: 25px 0;
+  border-radius: 6px;
+  letter-spacing: 0.5px;
+  background: whitesmoke;
+}
+
+
+
+.footer {
+  align-items: center;
+  width: 70%;
+  margin-top: 50px;
+  font-size: 11px;
+}
+
+.footer span{
+  display: flex;
+  justify-content: space-between
+  ;
+  align-items: center;
+  padding: 5px;
+}
+
+.footer a {
+  font-weight: 500;
+  color: black;
+
+}
