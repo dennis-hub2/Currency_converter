@@ -13,7 +13,7 @@ const NavBar = () => {
   return (
     <nav className="navbar">
       <div className="navbar-left">
-        <img src="\public\8850658.png" alt="Company Logo" className="logo"/>     
+        <img src="\8850658.png" alt="Company Logo" className="logo"/>     
         <span className="company-name">CEX Converter</span>
       </div>
 
